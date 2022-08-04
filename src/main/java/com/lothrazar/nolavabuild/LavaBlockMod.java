@@ -18,9 +18,8 @@ public class LavaBlockMod {
 
   @SubscribeEvent
   public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-    BlockState current = event.getWorld().getBlockState(event.getPos().relative(event.getFace()));
-    if (current.getBlock() == Blocks.LAVA
-        && current.getFluidState().isSource()) {
+    BlockState current = event.getLevel().getBlockState(event.getPos().relative(event.getFace()));
+    if (current.getBlock() == Blocks.LAVA && current.getFluidState().isSource()) {
       event.setCanceled(true);
     }
   }
