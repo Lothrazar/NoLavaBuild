@@ -17,7 +17,7 @@ issueTrackerURL="https://github.com/Lothrazar/NoLavaBuild/issues" #optional
 modId="nolavabuild" #mandatory
 license="MIT"
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="${file.jarVersion}" #mandatory
+version="${mod_version}" #mandatory
  # A display name for the mod
 displayName="No Lava Build" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -50,12 +50,12 @@ Disable building on top of lava source blocks.
 [[dependencies.nolavabuild]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4,)"
+    versionRange="[1.20.1,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.nolavabuild]]
     modId="flib"
     mandatory=true
-    versionRange="[0.0.4,)"
+    versionRange="[0.0.5,)"
     ordering="NONE"
     side="BOTH"
